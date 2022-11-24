@@ -1,0 +1,48 @@
+#Menu{
+    background:$color-3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h1{
+            font-weight:100;
+            margin-bottom: 0;
+            font-size: 1rem;
+            span{
+                font-weight: bold !important;
+                color: $color-1;
+            }
+        }
+        article{
+            letter-spacing: 0.2px;
+            word-spacing: 0px;
+            color: $color-2;
+            font-size: 10px;
+        }
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        a{
+            text-decoration: none;
+            padding:  5px 1rem;
+            margin: 0 10px;
+            background: $color-2;
+            color: $color-3;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                background: $color-4;
+                color: #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin input {
+    padding: 10px;
+    font-size: 17px;
+    border-width: 0px;
+    border-color: #6e926c;
+    background-color: #ECECEC;
+    border-style: solid;
+    border-radius: 0 50px 50px 0px;
+    box-shadow: 0px 0px 0px rgba(66,66,66,.0);
+    text-shadow: -50px 0px 0px rgba(66,66,66,.0);
+    &:focus {
+        outline:none;
+    }
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
