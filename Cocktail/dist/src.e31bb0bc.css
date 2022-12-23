@@ -153,29 +153,34 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 .cocktail-contenaire .cocktail-eacth {
-  margin: 10px;
+  margin: 3px;
   padding: 5px;
   background: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .cocktail-contenaire .cocktail-eacth p {
   font-size: 0.8rem;
   font-weight: bold;
+}
+.cocktail-contenaire .cocktail-eacth h1 {
+  color: #FF1818;
+  font-size: 1rem;
+  margin: 0;
 }
 .cocktail-contenaire .cocktail-eacth .name-contenaire {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.cocktail-contenaire .cocktail-eacth .name-contenaire .name {
-  color: #FF1818;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 .cocktail-contenaire .cocktail-eacth strong {
   color: #1e8018;
@@ -185,7 +190,10 @@ body {
   transform: scale(1.02);
   background: rgb(255, 166, 0);
 }
-.cocktail-contenaire img {
+.cocktail-contenaire .cocktail-eacth:hover h1 {
+  color: black;
+}
+.cocktail-contenaire .cocktail-eacth img {
   width: 150px;
   height: 150px;
   margin: 5px;
@@ -198,6 +206,49 @@ body {
   font-weight: 100;
   color: rgb(255, 166, 0);
   font-size: 1.2rem;
+}
+
+.hasard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hasard h1 {
+  color: #1e8018;
+}
+.hasard .basic {
+  background: #d3d3d3;
+  padding: 0 1rem;
+  transition: 0.5s ease-in-out;
+}
+.hasard .basic strong {
+  color: #FF1818;
+  font-size: 1rem;
+  margin: 0;
+}
+.hasard .basic img {
+  width: 400px;
+  left: 50%;
+}
+.hasard .basic:hover {
+  background: #000;
+}
+.hasard .basic:hover h1, .hasard .basic:hover h2, .hasard .basic:hover h3 {
+  color: #fff;
+}
+.hasard .ingredient {
+  background: rgb(255, 166, 0);
+  padding: 1rem;
+  height: auto;
+}
+.hasard .ingredient h1 {
+  font-size: 1rem;
+  position: relative;
+}
+
+.ingredient {
+  width: 200px;
+  height: 200px;
 }
 
 .custom-loader {
@@ -230,4 +281,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=/js.00a46daa.css.map */
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

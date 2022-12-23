@@ -1,18 +1,20 @@
-#Menu{
+#menu {
+    grid-area: A;
+    width: 25%;
+    min-width: 250px;
+    height: 100vh;
+    margin: 0;
     background:$color-3;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    display:grid;
+    justify-content: center;
+    grid-template-rows: 10% 1fr 30% ;
+    z-index: 1;
     .title{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
         h1{
             font-weight:100;
             margin-bottom: 0;
-            font-size: 1rem;
+            font-size: 2rem;
             span{
                 font-weight: bold !important;
                 color: $color-1;
@@ -22,26 +24,47 @@
             letter-spacing: 0.2px;
             word-spacing: 0px;
             color: $color-2;
-            font-size: 10px;
+            font-size: 1rem;
+        
         }
     }
     .menu{
-        list-style: none;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        letter-spacing: 0.5px;
-        font-weight: 500;
+        flex-direction: column;
+        justify-content: center;
         a{
             text-decoration: none;
-            padding:  5px 1rem;
-            margin: 0 10px;
-            background: $color-2;
-            color: $color-3;
+            padding:1rem;
+            margin: 10px 0;
             transition: 0.5s ease-in-out;
             &:hover{
                 background: $color-4;
                 color: #000;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8rem;
+        a{
+            color: $color-2;
+            &:hover{
+                color: $color-1;
+            }
+        }
+        span{
+            width: inherit;
+            .signature{
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: bold;
+            }
+            a{
+                font-size: 2rem;
+                margin: 1rem;
             }
         }
     }
